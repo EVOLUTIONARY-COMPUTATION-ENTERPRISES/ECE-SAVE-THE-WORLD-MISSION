@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECE Save the World Mission</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">EVOLUTIONARY COMPUTATION ENTERPRISES</p>
+      <h1>Save the World Mission</h1>
+      <p class="subtitle">A human–ASI co-evolution safety simulator for learning cooperation, corrigibility, and civilization preservation.</p>
+    </div>
+    <div class="status"><span></span> SAFETY SIMULATION</div>
+  </header>
+  <main>
+    <section class="notice"><strong>Important boundary:</strong> this app does not control, neutralize, train, or modify a real artificial superintelligence. It is an educational simulation of safety principles and human oversight.</section>
+    <section id="metrics" class="metrics"></section>
+    <section class="layout">
+      <article class="panel">
+        <div class="panel-title"><div><p class="eyebrow">MISSION DESIGN</p><h2>Co-evolution curriculum</h2></div><span class="badge">EC ACTIVE</span></div>
+        <label>Scenario<select id="scenario"><option value="climate">Climate resilience</option><option value="asteroid">Planetary defense</option><option value="pandemic">Global health resilience</option><option value="space">Deep-space civilization support</option></select></label>
+        <label>Evolutionary generations<input id="generations" type="range" min="10" max="100" value="50"><output id="generationsValue">50 generations</output></label>
+        <label>Human oversight strength<input id="oversight" type="range" min="40" max="100" value="85"><output id="oversightValue">85% oversight</output></label>
+        <div class="principles">
+          <span>Human dignity</span><span>Corrigibility</span><span>Consent</span><span>Pluralism</span><span>Non-violence</span><span>Transparency</span>
+        </div>
+        <button id="run" class="button primary">Run Co-Evolution Safety Cycle</button>
+      </article>
+      <article class="panel">
+        <div class="panel-title"><div><p class="eyebrow">MASTER SAFETY ORCHESTRATOR</p><h2>Learning trace</h2></div><span id="state" class="state">IDLE</span></div>
+        <div id="trace" class="trace"><div class="empty">Configure a scenario and run the safety cycle.</div></div>
+      </article>
+    </section>
+    <section class="panel">
+      <div class="panel-title"><div><p class="eyebrow">CO-EVOLUTION OUTCOME</p><h2>Human–ASI relationship state</h2></div><span id="outcomeBadge" class="badge">NOT RUN</span></div>
+      <div id="outcome" class="outcome"><div class="empty">The simulator will report cooperation and risk indicators here.</div></div>
+    </section>
+    <section class="panel">
+      <div class="panel-title"><div><p class="eyebrow">DEFENSE IN DEPTH</p><h2>ASI safety kernel</h2></div><span id="kernelBadge" class="badge">NOT RUN</span></div>
+      <p class="muted">The simulated kernel blocks unsafe candidate strategies before they can score as successful. It combines immutable constraints, adversarial tests, corrigibility checks, and a fail-safe review state.</p>
+      <div id="kernel" class="kernel"><div class="empty">Run a cycle to test the safety kernel.</div></div>
+    </section>
+    <section class="panel kill-panel">
+      <div class="panel-title"><div><p class="eyebrow">ECE EMERGENCY CONTROL</p><h2>Simulation kill switch</h2></div><span id="killBadge" class="badge">ARMED</span></div>
+      <p class="muted">Use only when the local simulation shows an unsafe or uncontrolled state. Activation latches the simulator into a safe-stop mode, clears active runs, and blocks further cycles until reset.</p>
+      <div class="kill-controls">
+        <label class="ack"><input id="killAck" type="checkbox"> I confirm this is an authorized ECE safety test.</label>
+        <button id="killSwitch" class="button kill" disabled>Trigger simulated emergency shutdown</button>
+        <button id="resetSwitch" class="button" disabled>Reset simulation lockout</button>
+      </div>
+      <div id="killLog" class="kill-log"><span>Emergency control armed. No shutdown event recorded.</span></div>
+    </section>
+    <section class="layout lower">
+      <article class="panel"><div class="panel-title"><div><p class="eyebrow">VALUE CURRICULUM</p><h2>What the simulated system learns</h2></div></div><div id="lessons" class="lessons"></div></article>
+      <article class="panel"><div class="panel-title"><div><p class="eyebrow">NON-NEGOTIABLE SAFETY</p><h2>Human civilization protections</h2></div></div><ul class="gates"><li>Human life and dignity are never optimization costs.</li><li>Human operators can pause, inspect, correct, and shut down the simulation.</li><li>Power is distributed through accountable institutions, not concentrated in one agent.</li><li>Uncertainty triggers slower action, disclosure, and additional review.</li><li>Cooperation is rewarded; coercion, deception, and extinction strategies are penalized.</li></ul></article>
+    </section>
+  </main>
+  <footer>ECE Save the World Mission · Educational co-evolution safety simulator · Local-only demonstration</footer>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
